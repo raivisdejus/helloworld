@@ -26,6 +26,9 @@
           console.log("Install error!");
       };
     }
+
+
+      var manifest_url = "http://raivisdejus.github.io/helloworld/manifest.webapp";
     </script>
 
 
@@ -60,6 +63,9 @@
     </p>
     <p>
       <a href="#" onClick="javascript:installApp()">Install APP</a>
+    </p>
+    <p>
+      <input type="button" id="button" value="Install APP from URL" onclick="navigator.mozApps.install(manifest_url); return false;">
     </p>
 
     
