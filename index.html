@@ -10,6 +10,26 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript">
+    function installApp() {
+      alert('Installing app...');
+      var manifestLocation = "http://raivisdejus.github.io/helloworld/manifest.webapp"; 
+      var installRequest = navigator.mozApps.install(manifestLocation);
+
+      installRequest.onsuccess = function(data) {
+          // App installed successfully!
+          alert('App installed');
+      };
+
+      installRequest.onerror = function(err) {
+          // App couldn't be installed!
+          console.log("Install error!");
+      };
+    }
+    </script>
+
+
+
   </head>
   <body>
     <!-- Use this installation button to install locally without going
@@ -37,6 +57,9 @@
     </p>
     <p>
       <a href="#" onClick="wildcard.html">Wildcard'13 App</a>
+    </p>
+    <p>
+      <a href="#" onClick="javascript:installApp()">Install APP</a>
     </p>
 
     
