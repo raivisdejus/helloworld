@@ -12,9 +12,9 @@ if(installBtn) {
     // and this app isn't already installed.
     if(navigator.mozApps) {
 
-        installBtn.addEventListener('click', function() {
-            alert('Installing ' + location.href + 'manifest.webapp');
-            navigator.mozApps.install(location.href + 'manifest.webapp');
+        installBtn.addEventListener('click', function() {            
+            //navigator.mozApps.install(location.href + 'manifest.webapp');
+            navigator.mozApps.install('http://raivisdejus.github.io/helloworld/manifest.webapp');
         }, false);
 
         var req = navigator.mozApps.getSelf();
