@@ -13,6 +13,7 @@ if(installBtn) {
     if(navigator.mozApps) {
 
         installBtn.addEventListener('click', function() {
+            alert('Installing ' + location.href + 'manifest.webapp');
             navigator.mozApps.install(location.href + 'manifest.webapp');
         }, false);
 
