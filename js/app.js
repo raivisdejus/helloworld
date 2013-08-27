@@ -11,10 +11,8 @@ if(installBtn) {
     // This code shows the button if the apps platform is available
     // and this app isn't already installed.
     if(navigator.mozApps) {
-
         installBtn.addEventListener('click', function() {            
-            //navigator.mozApps.install(location.href + 'manifest.webapp');
-            navigator.mozApps.install('http://raivisdejus.github.io/helloworld/manifest.webapp');
+            navigator.mozApps.install(location.href + 'manifest.webapp');
         }, false);
 
         var req = navigator.mozApps.getSelf();
