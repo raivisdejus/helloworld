@@ -9,14 +9,14 @@
     "128": "/helloworld//img/icons/mortar-128.png"
   },
   "developer": {
-    "name": "Your Name",
+    "name": "Raivis",
     "url": "http://yourawesomeapp.com"
   },
   "installs_allowed_from": ["*"],
   "appcache_path": "/helloworld/cache.manifest",
   "locales": {
-    "es": {
-      "description": "Su nueva e impresionante Open Web App",
+    "lv": {
+      "description": "Šī ir mana foršā aplikācija",
       "developer": {
         "url": "http://yourawesomeapp.com"
       }
