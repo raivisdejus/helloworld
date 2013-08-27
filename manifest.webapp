@@ -11,5 +11,6 @@
   "developer": {
     "name": "Raivis",
     "url": "http://yourawesomeapp.com"
-  }
+  },
+  "installs_allowed_from": ["*"]
 }
