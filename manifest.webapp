@@ -1,16 +1,16 @@
 {
   "version": "0.1",
-  "name": "Test App",
+  "name": "HelloWorld",
   "description": "Your new awesome Open Web App",
-  "launch_path": "/index.html",
+  "launch_path": "/helloworld/index.html",
   "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
+    "16": "/helloworld/img/icons/mortar-16.png",
+    "48": "/helloworld/img/icons/mortar-48.png",
+    "128": "/helloworld/img/icons/mortar-128.png"
   },
   "developer": {
     "name": "Raivis",
-    "url": "http://yourawesomeapp.com"
+    "url": "http://raivisdejus.github.io/helloworld/"
   },
   "installs_allowed_from": ["*"]
 }
