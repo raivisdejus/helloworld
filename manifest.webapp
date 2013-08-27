@@ -6,6 +6,7 @@
   "icons": {
     "16": "/helloworld/img/icons/mortar-16.png",
     "48": "/helloworld/img/icons/mortar-48.png",
+    "60": "/helloworld/img/icons/mortar-60.png",
     "128": "/helloworld/img/icons/mortar-128.png"
   },
   "developer": {
