@@ -1,0 +1,15 @@
+{
+  "version": "0.1",
+  "name": "Test App",
+  "description": "Your new awesome Open Web App",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/mortar-16.png",
+    "48": "/img/icons/mortar-48.png",
+    "128": "/img/icons/mortar-128.png"
+  },
+  "developer": {
+    "name": "Raivis",
+    "url": "http://yourawesomeapp.com"
+  }
+}
