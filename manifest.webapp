@@ -4,28 +4,14 @@
   "description": "Your new awesome Open Web App",
   "launch_path": "/helloworld/",
   "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
+    "16": "/helloworld/img/icons/mortar-16.png",
+    "48": "/helloworld/img/icons/mortar-48.png",
+    "128": "/helloworld/img/icons/mortar-128.png"
   },
   "developer": {
     "name": "Raivis",
     "url": "http://yourawesomeapp.com"
   },
   "installs_allowed_from": ["*"],
-  "locales": {
-    "lv": {
-      "description": "Šī ir mana foršā aplikācija",
-      "developer": {
-        "url": "http://yourawesomeapp.com"
-      }
-    },
-    "it": {
-      "description": "Il vostro nuovo fantastico Open Web App",
-      "developer": {
-        "url": "http://yourawesomeapp.com"
-      }
-    }
-  },
   "default_locale": "en"
 }
