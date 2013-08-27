@@ -1,24 +1,27 @@
+var installBtn = document.getElementById('install-btn');
 
-// This uses require.js to structure javascript:
-// http://requirejs.org/docs/api.html#define
-
-define(function(require) {
-    // Zepto provides nice js and DOM methods (very similar to jQuery,
-    // and a lot smaller):
-    // http://zeptojs.com/
-    var $ = require('zepto');
-
-    // Need to verify receipts? This library is included by default.
-    // https://github.com/mozilla/receiptverifier
-    require('receiptverifier');
-
-    // Want to install the app locally? This library hooks up the
-    // installation button. See <button class="install-btn"> in
-    // index.html
-    require('./install-button');
-
-    // Write your app here.
-
+if(installBtn) {
     
-});
+    installBtn.style.display = 'none';
+    
+    // If you want an installation button, add this to your HTML:
+    //
+    // <button id="install-btn">Install</button>
+    //
+    // This code shows the button if the apps platform is available
+    // and this app isn't already installed.
+    if(navigator.mozApps) {
 
+        installBtn.addEventListener('click', function() {
+            navigator.mozApps.install(location.href + 'manifest.webapp');
+        }, false);
+
+        var req = navigator.mozApps.getSelf();
+        req.onsuccess = function() {
+            if(!req.result) {
+                installBtn.style.display = 'block';
+            }
+        };
+
+    }
+}

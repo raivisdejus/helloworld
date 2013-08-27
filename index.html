@@ -3,78 +3,41 @@
   <head>
     <meta charset="utf-8">
 
-    <title></title>
-    <meta name="description" content="">
+    <!-- This is a comment. Everything between the opening and closing > is ignored by the browser.
+    We'll use that to provide you with some help.
+    You can safely delete the comments once you're done with them. -->
+
+    <!-- This is the title of your page. Change it at will. For example: Joe's great space game -->
+    <title>Hello world!</title>
+
+    <!-- Search engines sometimes use this when showing results. Change it to match your page's contents -->
+    <meta name="description" content="My first page is a carefully crafted example of web awesomeness.">
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/app.css">
-    <script type="text/javascript">
-    function installApp() {
-      alert('Installing app...');
-      var manifestLocation = "http://raivisdejus.github.io/helloworld/manifest.webapp"; 
-      var installRequest = navigator.mozApps.install(manifestLocation);
-
-      installRequest.onsuccess = function(data) {
-          // App installed successfully!
-          alert('App installed');
-      };
-
-      installRequest.onerror = function(err) {
-          // App couldn't be installed!
-          console.log("Install error!");
-      };
-    }
-
-
-      var manifest_url = "http://raivisdejus.github.io/helloworld/manifest.webapp";
-    </script>
-
-
-
   </head>
   <body>
-    <!-- Use this installation button to install locally without going
-         through the marketpace (see app.js) -->
-    <button id="install-btn">Install</button>
+      <h1>Awesome app</h1>
+      <div id="content">
+          <p>Welcome to your awesome web app!</p>
+          <p>This was created from the <a href="https://github.com/mozilla/mortar-app-stub">mortar-app-stub</a>
+          template, one of the <a href="https://github.com/mozilla/mortar">mortar templates</a>.</p>
 
-    <!-- Write your application here -->
+          <button id="install-btn">Install</button>
+      </div>
+      <p>
+        <a href="#" onClick="javascript:alert('It Works!')">Alert!</a>
+      </p>
+      <p>
+        <a href="#" onClick="javascript:window.navigator.vibrate([200, 200, 200])">Vibrate :)</a>
+      </p>
+      <p>
+        <a href="wildcard.html">Wildcard'13 App</a>
+      </p>
 
-    <p>
-      Welcome to your awesome web app. This was created from the
-      <a href="https://github.com/mozilla/mortar-app-stub">mortar-app-stub</a>
-      template, one of the
-      <a href="https://github.com/mozilla/mortar">mortar templates</a>.
-    </p>
 
-    <p>
-      <a href="https://developer.mozilla.org/en-US/docs/Apps/App_templates#What_Now.3F">
-        What now?</a>
-    </p>
-    <p>
-      <a href="#" onClick="javascript:alert('It Works!')">Alert!</a>
-    </p>
-    <p>
-      <a href="#" onClick="javascript:window.navigator.vibrate([200, 200, 200])">Vibrate :)</a>
-    </p>
-    <p>
-      <a href="wildcard.html">Wildcard'13 App</a>
-    </p>
-    <p>
-      <a href="#" onClick="javascript:installApp()">Install APP</a>
-    </p>
-    <p>
-      <input type="button" id="button" value="Install APP from URL" onclick="navigator.mozApps.install(manifest_url); return false;">
-    </p>
-
-    
-    <!-- Using require.js, a module system for javascript, include the
-         js files. This loads "main.js", which in turn can load other
-         files, all handled by require.js:
-         http://requirejs.org/docs/api.html#jsfiles -->
-    <script type="text/javascript"
-            data-main="js/init.js"
-            src="js/lib/require.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
