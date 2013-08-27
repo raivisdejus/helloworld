@@ -2,7 +2,7 @@
   "version": "0.1",
   "name": "My Awesome App",
   "description": "Your new awesome Open Web App",
-  "launch_path": "http://raivisdejus.github.io/helloworld/index.html",
+  "launch_path": "/helloworld/",
   "icons": {
     "16": "/helloworld/img/icons/mortar-16.png",
     "48": "/helloworld//img/icons/mortar-48.png",
