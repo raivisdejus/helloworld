@@ -1,6 +1,6 @@
 {
   "version": "0.2",
-  "name": "HelloWorld App",
+  "name": "HelloWorld",
   "description": "Sample demo app for Firefox Marketpace",
   "launch_path": "/helloworld/",
   "icons": {
