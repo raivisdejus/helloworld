@@ -1,7 +1,7 @@
 {
   "version": "0.2",
-  "name": "My Awesome App",
-  "description": "Your new awesome Open Web App",
+  "name": "HelloWorld App",
+  "description": "Sample demo app for Firefox Marketpace",
   "launch_path": "/helloworld/",
   "icons": {
     "16": "/helloworld/img/icons/mortar-16.png",
@@ -10,8 +10,8 @@
     "128": "/helloworld/img/icons/mortar-128.png"
   },
   "developer": {
-    "name": "Raivis",
-    "url": "http://yourawesomeapp.com"
+    "name": "Raivis Dejus",
+    "url": "https://github.com/raivisdejus/"
   },
   "installs_allowed_from": ["*"],
   "default_locale": "en"
