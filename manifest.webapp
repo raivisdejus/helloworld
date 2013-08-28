@@ -1,0 +1,17 @@
+{
+  "version": "0.2",
+  "name": "HelloWorld",
+  "description": "Sample demo app for Firefox Marketpace",
+  "launch_path": "/helloworld/",
+  "icons": {
+    "16": "/helloworld/img/icons/mortar-16.png",
+    "48": "/helloworld/img/icons/mortar-48.png",
+    "60": "/helloworld/img/icons/mortar-60.png",
+    "128": "/helloworld/img/icons/mortar-128.png"
+  },
+  "developer": {
+    "name": "Raivis Dejus",
+    "url": "https://github.com/raivisdejus/"
+  },
+  "installs_allowed_from": ["*"]
+}
