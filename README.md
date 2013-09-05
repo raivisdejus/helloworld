@@ -1,3 +1,6 @@
+Link to the app - http://raivisdejus.github.io/helloworld/
+
+
 # A Blank Template for Open Web Apps
 
 *This template has been updated with a new structure as of May 2013. Other mortar templates will be updated soon too.*
